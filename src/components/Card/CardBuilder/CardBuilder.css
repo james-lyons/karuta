@@ -1,0 +1,36 @@
+
+.card-builder-div {
+    background-color: #fffAF1;
+    padding: 1em;
+    margin: 1em 0;
+    width: 235px;
+}
+
+.card-form {
+    border: 1px solid black;
+    padding: .5em;
+    margin: .5em auto;
+    background-color: white;
+}
+
+.example-card {
+    width: 207px;
+    height: 300px;
+    padding-top: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.card-h1 {
+    font-size: 2em;
+    padding-top: 15px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+.card-btn {
+    margin-top: 1em;
+}

@@ -1,0 +1,54 @@
+.profile-section {
+    display: flex;
+    justify-content: left;
+}
+
+.profile-items {
+    display: inline-block;
+    padding: 2em 6em;
+    border: 10px solid rgb(170, 90, 70);
+    background-color: #fffAF1;
+}
+
+.profile-image {
+    max-width: 12em;
+    margin-left: 14.3em;
+    margin-right: 5em;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: black;
+}
+
+.profile-decks {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    background-color: rgb(140, 180, 120);
+    border: 10px solid black;
+    border-radius: 10px;
+    width: 70vw;
+    height: 50vh;
+    margin: 4em auto;
+    overflow-y: auto;
+    justify-content: space-around;
+}
+
+.profile-decks-div {
+    width: 85%;
+    height: 225px;
+    background-color: #fffAF1;
+    border: 10px solid rgb(170, 90, 70);
+    margin: 2em;
+    padding: .8em;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+.profile-deck-h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.profile-decks-div-h1 {
+    font-size: 1.25em;
+    margin: .87em 0;
+}

@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../../images/karuta-background-1.jpg');
+    background-size: cover;
+}
+
+.article-h1 {
+    font-size: 1em;
+}
+
+.articles-section {
+    display: flex;
+    max-width: 70vw;
+    margin: 3em auto;
+}
+
+.articles {
+    display: flex;
+    margin: 0 1.25em;
+    max-width: 35%;
+    max-height: 275px;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    border: 11px solid rgb(170, 90, 70);
+    border-radius: .75em;
+};
+
+iframe {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.videodiv {
+    background: rgba(170, 80, 70);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+a {
+    text-decoration: none;
+}

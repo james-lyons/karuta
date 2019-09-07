@@ -1,0 +1,25 @@
+
+.scoreboard-section {
+    text-align: center;
+}
+
+.scoreboard-div {
+    display: inline-block;
+    background-color: rgb(140, 180, 120);
+    border-radius: 10px;
+    padding-top: .5em;
+    margin: 0 auto;
+}
+
+.scoreboard-h1 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.scoreboard-h2 {
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 0 2em;
+    margin: .5em;
+}

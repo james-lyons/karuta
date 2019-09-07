@@ -1,0 +1,26 @@
+.rules-container {
+    max-width: 75vw;
+    max-height: 75vh;
+    overflow-y: scroll;
+}
+
+.left-side {
+    max-width: 70%;
+    padding: 2em;
+    display: inline-block;
+}
+
+.right-side {
+    max-width: 30%;
+    display: inline-block;
+}
+
+.rule-img {
+    display: block;
+    max-width: 250px;
+}
+
+.btn {
+    padding: .5em;
+    margin-top: 1em;
+}

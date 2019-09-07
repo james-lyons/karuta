@@ -1,0 +1,32 @@
+.deckboard-div {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    background-color: #fffAF1;
+    overflow-y: scroll;
+    width: 40vw;
+    height: 78vh;
+    border: 10px solid brown;
+    border-radius: 10px;
+}
+
+.deckboard-h1 {
+    font-size: 1.5em;
+    margin: 0 1em;
+    padding: 0;
+}
+
+.deck-cards {
+    background-color: whitesmoke;
+    width: 90%;
+    height: 200px;
+    margin: 1em;
+    padding: 3em 1em;
+    border: 5px solid brown;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+.deck-card-text-h1 {
+    font-size: 1.5em;
+}

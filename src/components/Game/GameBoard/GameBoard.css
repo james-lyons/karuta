@@ -1,0 +1,17 @@
+.gameboard-div {
+    background-image: url('../../../images/tatami_1.jpeg');
+    padding: 1em;
+    display: block;
+    max-width: 90vw;
+    min-width: 90vw;
+    max-height: 70vh;
+    min-height: 70vh;
+    margin: 2em auto;
+}
+
+.gameboard-h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}

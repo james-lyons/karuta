@@ -1,0 +1,17 @@
+
+.deck-builder-section {
+    text-align: center;
+    background-color: brown;
+    padding: .7em;
+    border-radius: 10px;
+}
+
+.deck-builder {
+    background-color: #fffAF1;
+    padding: .75em;
+}
+
+.deck-btn {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
