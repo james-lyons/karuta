@@ -11,3 +11,11 @@
 .deck-board-div {
     justify-self: center;
 }
+
+.card-edit-form {
+    overflow-y: auto;    
+}
+
+#edit_card_text {
+    width: 90px;
+}

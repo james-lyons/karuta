@@ -21,7 +21,7 @@ class ProfileContainer extends React.Component {
     render() {
         return (
             <>
-                {this.state.user && <Profile user={this.state.user}/>}
+                {this.state.user && <Profile user = {this.state.user}/>}
             </>
         );
     };

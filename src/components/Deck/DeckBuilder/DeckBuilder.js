@@ -5,7 +5,15 @@ import CardBuilder from '../../Card/CardBuilder/CardBuilder';
 import './DeckBuilder.css';
 import '../../Card/CardBuilder/CardBuilder.css';
 
-const DeckBuilder = ({ onInputChange, onDeckSubmit, onCardSubmit, title, description, card_text}) => {
+const DeckBuilder = (
+    {
+        onInputChange,
+        onDeckSubmit,
+        onCardSubmit,
+        title,
+        description,
+        card_text
+    }) => {
     return (
         <>
         <section className="deck-builder-section">
@@ -17,7 +25,7 @@ const DeckBuilder = ({ onInputChange, onDeckSubmit, onCardSubmit, title, descrip
                         id="title"
                         name="title"
                         placeholder="Rap Deck"
-                        value={title}
+                        value={ title }
                         />
                     <br />
                     <input 

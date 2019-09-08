@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { withRouter } from 'react-router-dom';
 import { Button, Modal } from 'semantic-ui-react';
 import API_URL from '../../constants';
 import './Auth.css'
@@ -73,4 +74,4 @@ class Login extends React.Component {
     };
 };
 
-export default Login;
+export default withRouter(Login);

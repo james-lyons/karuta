@@ -15,8 +15,8 @@ const NavBar = ({ currentUser, setCurrentUser, logout }) => {
                 </div>
                 <div className="right-menu">
                     <Rules />
-                    <Login currentUser={ currentUser } setCurrentUser={ setCurrentUser }/>
                     <Register currentUser={ currentUser } setCurrentUser={ setCurrentUser }/>
+                    <Login currentUser={ currentUser } setCurrentUser={ setCurrentUser }/>
                 </div>
             </nav>
         </>
@@ -31,8 +31,8 @@ const NavBar = ({ currentUser, setCurrentUser, logout }) => {
                 </div>
                 <div className="right-menu">
                     <Rules />
-                    <NavLink className="NavLink" to='/profile' >Profile</NavLink>
                     <NavLink className="NavLink" to='/deck' currentUser={ currentUser }>Deck</NavLink>
+                    <NavLink className="NavLink" to='/profile' >Profile</NavLink>
                     <li className="logout">
                         <span onClick={ logout }>Logout</span>
                     </li>

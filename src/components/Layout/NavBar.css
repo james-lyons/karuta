@@ -1,19 +1,15 @@
 .nav-bar {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: end;
     background-color: rgb(70, 90, 70);
     padding: .5em;
     margin-bottom: 2em;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
 }
 
-/* .left-menu {
-
-} */
-
-/* .right-menu {
-
-} */
+.right-menu {
+    justify-self: end;
+}
 
 .logout {
     cursor: pointer;

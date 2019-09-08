@@ -2,7 +2,7 @@ import React from 'react';
 import './Profile.css'
 
 const mapper = (decks) => {
-    const deckArr = decks.map((deck) => <div className="profile-decks-div">
+    const deckArr = decks.map((deck) => <div id = {deck._id} className="profile-decks-div">
                             <h1 className="profile-decks-div-h1">{deck.title}</h1>
                             <h1 className="profile-decks-div-h1">{deck.description}</h1>
                             <h1 className="profile-decks-div-h1">Number of cards: {deck.cards.length}</h1>

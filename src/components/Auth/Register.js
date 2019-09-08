@@ -23,7 +23,6 @@ class Register extends React.Component {
         const newUser = this.state;
         delete newUser["errors"];
         Axios.post(`${API_URL}/auth/register`, newUser)
-            .then((res) => console.log(res))
             .catch((err) => {
                 console.log(err.response.data)
                 this.setState({
