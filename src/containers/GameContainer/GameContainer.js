@@ -34,7 +34,6 @@ class GameContainer extends React.Component {
         this.setState({
             deck_id: event.target.id
         });
-        console.log(this.state.deck_id)
         this.state.activated === "not-active" ?
         this.setState({activated: "active"}) :
         this.setState({activated: "not-active"})
