@@ -6,13 +6,13 @@ const GameDecksBoard = ({ decks, mapper, selectDeck }) => {
         const deckArr = decks.map((deck) =>
                         <div 
                             onClick={ selectDeck }
-                            id={deck._id}
+                            id={ deck._id }
                             className="game-decks-div">
                                 <h1 className="game-decks-div-h1">
-                                    Title: {deck.title}
+                                    Title: { deck.title }
                                 </h1>
                                 <h1 className="game-decks-div-h1">
-                                    Description: {deck.description}
+                                    Description: { deck.description }
                                 </h1>
                         </div>
         );

@@ -179,12 +179,14 @@ class DeckContainer extends React.Component {
                                         </button>
                                     </form>
                                 </div>
-                                <button onClick={ this.showCardEditButton }>
-                                    Edit
-                                </button>
-                                <button onClick={ () => this.onCardDelete(card) }>
-                                    Delete
-                                </button>
+                                <div className="edit-card-form-buttons-div">
+                                    <button className="edit-card-form-btn" onClick={ this.showCardEditButton }>
+                                        Edit
+                                    </button>
+                                    <button onClick={ () => this.onCardDelete(card) }>
+                                        Delete
+                                    </button>
+                                </div>
                             </div>
         );
         return cardArr;

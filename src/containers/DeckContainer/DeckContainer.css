@@ -19,3 +19,16 @@
 #edit_card_text {
     width: 90px;
 }
+
+.edit-card-form-buttons-div{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 2em;
+    font-size: .7em;
+    margin: 0;
+    padding: 0;
+}
+
+.edit-card-form-btn {
+    justify-self: center;
+}
