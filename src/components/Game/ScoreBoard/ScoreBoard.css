@@ -1,25 +1,54 @@
 
-.scoreboard-section {
-    text-align: center;
+.score-board-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10vh;
 }
 
-.scoreboard-div {
-    display: inline-block;
-    background-color: rgb(140, 180, 120);
+.score-board-div {
+    width: 50%;
+    background-color: #fffAF1;
+    border: 8px solid rgb(140, 180, 120);
     border-radius: 10px;
     padding-top: .5em;
-    margin: 0 auto;
+    margin-right: 1em;
+    text-align: center;
+    justify-self: end;
 }
 
-.scoreboard-h1 {
+.score-board-current-word-div {
+    width: 50%;
+    height: 100%;
+    background-color: #fffAF1;
+    border: 8px solid rgb(140, 180, 120);
+    border-radius: 10px;
+    padding-top: .5em;
+    margin-left: 1em;
+    text-align: center;
+    justify-self: start;
+    overflow-y: auto;
+}
+
+.score-board-h1 {
     font-size: 1.5em;
     margin: 0;
-    padding: 0;
 }
 
-.scoreboard-h2 {
-    display: inline-block;
+.score-board-current-word-h1 {
+    font-size: 1em;
+    padding: 1em;
+}
+
+.score-board-h2 {
     font-size: 1.25em;
-    padding: 0 2em;
-    margin: .5em;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: .3em;
+    /* border: 1px solid black; */
+}
+
+.score-board-timer-and-score-area-div {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }

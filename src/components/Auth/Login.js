@@ -21,7 +21,7 @@ class Login extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         const user = this.state;
-        axios.post(`${API_URL}/auth/login`, user, { withCredentials: true })
+        axios.post(`${ API_URL }/auth/login`, user, { withCredentials: true })
             .then((res) => {
                 console.log(res);
                 this.props.setCurrentUser(res.data.id);
@@ -41,21 +41,35 @@ class Login extends React.Component {
                         <div>
                             {this.state.error && (
                                 <div>
-                                    {this.state.error}
+                                    { this.state.error }
                                     <button type="button" data-dismiss="alert">
                                         <span>&times;</span>
                                     </button>
                                 </div>
                             )}
                             <section id="login" className="ui form">
-                                <form onSubmit={this.handleSubmit}>
+                                <form onSubmit={ this.handleSubmit }>
                                     <div className="field">
                                         <label htmlFor="email">Email</label>
-                                        <input type="email" id="email" name="email" value={this.state.email} onChange={this.handleChange} placeholder="Email" />
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            value={ this.state.email }
+                                            onChange={ this.handleChange }
+                                            placeholder="Email"
+                                        />
                                     </div>
                                     <div className="field">
                                         <label htmlFor="email">Password</label>
-                                        <input type="password" id="password" name="password" value={this.state.password} onChange={this.handleChange} placeholder="password" />
+                                        <input
+                                            type="password"
+                                            id="password"
+                                            name="password"
+                                            value={ this.state.password }
+                                            onChange={ this.handleChange }
+                                            placeholder="password"
+                                        />
                                     </div>
                                     <br/>
                                     <div className="actions">

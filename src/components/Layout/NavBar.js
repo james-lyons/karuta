@@ -11,26 +11,31 @@ const NavBar = ({ currentUser, setCurrentUser, logout }) => {
             <nav className="nav-bar">
                 <div className="left-menu">
                     <NavLink className="NavLink" exact to ='/'>Home</NavLink>
-                    <NavLink className="NavLink" to ='/game'>Play!</NavLink>
+                    <Rules />
                 </div>
                 <div className="right-menu">
-                    <Rules />
-                    <Register currentUser={ currentUser } setCurrentUser={ setCurrentUser }/>
-                    <Login currentUser={ currentUser } setCurrentUser={ setCurrentUser }/>
+                    <Login
+                        currentUser={ currentUser }
+                        setCurrentUser={ setCurrentUser }
+                    />
+                    <Register
+                        currentUser={ currentUser } 
+                        setCurrentUser={ setCurrentUser }
+                    />
                 </div>
             </nav>
         </>
-    )
+    );
 
     const authLinks = (
         <>
             <nav className="nav-bar">
                 <div className="left-menu">
                     <NavLink className="NavLink" exact to ='/'>Home</NavLink>
+                    <Rules />
                     <NavLink className="NavLink" to ='/game'>Play!</NavLink>
                 </div>
                 <div className="right-menu">
-                    <Rules />
                     <NavLink className="NavLink" to='/deck' currentUser={ currentUser }>Deck</NavLink>
                     <NavLink className="NavLink" to='/profile' >Profile</NavLink>
                     <li className="logout">
@@ -39,13 +44,13 @@ const NavBar = ({ currentUser, setCurrentUser, logout }) => {
                 </div>
             </nav>
         </>
-    )
+    );
 
     return (
         <>
-            { currentUser ?  authLinks : links }        
+            { currentUser ?  authLinks : links }     
         </>
-    )
-}
+    );
+};
 
 export default NavBar;

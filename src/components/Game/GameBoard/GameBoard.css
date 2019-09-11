@@ -1,17 +1,95 @@
-.gameboard-div {
-    background-image: url('../../../images/tatami_1.jpeg');
-    padding: 1em;
-    display: block;
-    max-width: 90vw;
-    min-width: 90vw;
-    max-height: 70vh;
-    min-height: 70vh;
-    margin: 2em auto;
+
+.game-area-div {
+    display: grid;
+    grid-template-columns: 85% 15%;
 }
 
-.gameboard-h1 {
+.game-board-div {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    padding: 1em;
+    height: 70vh;
+    width: 80vw;
+    margin: 2em auto;
+    background-image: url('../../../images/tatami_1.jpeg');
+}
+
+.play-game-top-div {
+    display: grid;
+    justify-content: center;
+}
+
+.play-game-board-area-div {
+    display: grid;
+    grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
+    grid-template-rows: 30% 30% 30%;
+    justify-self: center;
+    height: 60vh;
+    overflow-y: auto;
+}
+
+.play-game-cards {
+    height: 80%;
+    width: 60%;
+    margin: 1em;
+    padding: 1em;
+    background-color: #fffAF1;
+    border: 1px solid black;
+    overflow-y: auto;
+}
+
+.game-deck-section {
+    background-color: rgb(140, 180, 120);
+    padding: 2em 1em 0 1em;
+    height: 650px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.game-deck-section-div {
+    height: 600px;
+    overflow-y: auto;
+}
+
+.game-decks-div {
+    text-align: center;
+    height: 200px;
+    margin: 1em 0;
+    padding: 3em 1em 3em 1em;
+    background-color: #fffAF1;
+    border: 8px solid rgb(170, 90, 70);
+    overflow-y: auto;
+}
+
+.game-decks-div:hover {
+    background-color: cyan;
+    border: 8px solid rgb(170, 90, 70);
+}
+
+.game-board-h1 {
     text-align: center;
     font-size: 1.5em;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 125px;
+    background-color: white;
+}
+
+.game-decks-div-h1 {
+    font-size: .9em;
+    margin: .5em;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+.deck-card-text-h1 {
+    font-size: 1em;
+}
+
+.start-game-btn {
+    width: 100px;
+    padding: .5em;
+    background-color: cyan;
+    border: 1px solid black;
 }

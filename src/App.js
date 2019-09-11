@@ -11,16 +11,16 @@ class App extends React.Component {
   };
 
   setCurrentUser = (userId) => {
-    this.setState({currentUser: userId});
+    this.setState({ currentUser: userId });
     localStorage.setItem('uid', userId)
   };
 
   logout = () => {
     localStorage.removeItem('uid');
-    axios.post(`${API_URL}/auth/logout`,{ withCredentials: true })
+    axios.post(`${ API_URL }/auth/logout`, { withCredentials: true })
       .then(res => {
         console.log(res);
-        this.setState({ currentUser: null});
+        this.setState({ currentUser: null });
         this.props.history.push('/');
       })
       .catch(err => console.log(err));
@@ -30,9 +30,16 @@ class App extends React.Component {
 
     return (
       <>
-        <NavBar currentUser={ this.state.currentUser } setCurrentUser={ this.setCurrentUser } logout={ this.logout }/>
+        <NavBar
+          currentUser = { this.state.currentUser }
+          setCurrentUser = { this.setCurrentUser }
+          logout = { this.logout }
+        />
         <div className="App">
-            <Routes currentUser={ this.state.currentUser} setCurrentUser={ this.setCurrentUser}/>
+            <Routes
+              currentUser = { this.state.currentUser}
+              setCurrentUser = { this.setCurrentUser}
+            />
         </div>
       </>
     );

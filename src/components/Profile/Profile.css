@@ -1,19 +1,20 @@
 .profile-section {
-    display: flex;
-    justify-content: left;
+    display: grid;
+    grid-template-columns: 20% 32% 20%;
+    justify-content: center;
+    margin-left: 1vw;
 }
 
 .profile-items {
-    display: inline-block;
+    text-align: center;
     padding: 2em 6em;
     border: 10px solid rgb(170, 90, 70);
     background-color: #fffAF1;
 }
 
 .profile-image {
-    max-width: 12em;
-    margin-left: 14.3em;
-    margin-right: 5em;
+    width: 16em;
+    height: 16em;
     padding: 2em;
     border-radius: 1em;
     background-color: black;
@@ -27,7 +28,7 @@
     border-radius: 10px;
     width: 70vw;
     height: 50vh;
-    margin: 4em auto;
+    margin: 2em auto;
     overflow-y: auto;
     justify-content: space-around;
 }
@@ -51,4 +52,13 @@
 .profile-decks-div-h1 {
     font-size: 1.25em;
     margin: .87em 0;
+}
+
+.edit-profile-form-div {
+    padding-top: 4em;
+    width: 80%;
+    text-align: center;
+    justify-self: center;
+    border: 10px solid rgb(170, 90, 70);
+    background-color: #fffAF1;
 }
