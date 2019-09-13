@@ -25,7 +25,7 @@ class Register extends React.Component {
             { withCredentials: true },
             { credentials: 'same-origin' },
             { headers:
-                { 'Access-Control-Allow-Origin': '*' }})
+                { 'Access-Control-Allow-Origin': 'https://karuta-react.herokuapp.com/' }})
             .catch((err) => {
                 console.log(err)
                 this.setState({
