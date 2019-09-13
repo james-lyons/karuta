@@ -21,11 +21,7 @@ class Register extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         const newUser = this.state;
-        axios.post(`${ API_URL }/auth/register`, newUser,
-            { withCredentials: true },
-            { credentials: 'same-origin' },
-            { Headers:
-                { 'Access-Control-Allow-Origin': 'https://karuta-react.herokuapp.com/' }})
+        axios.post(`${ API_URL }/auth/register`, newUser, { withCredentials: true })
             .catch((err) => {
                 console.log(err)
                 this.setState({
