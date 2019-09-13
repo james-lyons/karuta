@@ -21,7 +21,7 @@ class Register extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         const newUser = this.state;
-        axios.post(`${ API_URL }/auth/register`, newUser)
+        axios.post(`${ API_URL }/auth/register`, newUser, withCredentials=true)
             .catch((err) => {
                 console.log(err)
                 this.setState({
