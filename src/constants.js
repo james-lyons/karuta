@@ -1,2 +1,2 @@
-const API_URL = 'https://git.heroku.com/karuta-server.git';
+const API_URL = 'https://karuta-server.herokuapp.com';
 export default API_URL;
