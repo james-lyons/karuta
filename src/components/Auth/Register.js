@@ -24,7 +24,7 @@ class Register extends React.Component {
         axios.post(`${ API_URL }/auth/register`, newUser,
             { withCredentials: true },
             { credentials: 'same-origin' },
-            { headers:
+            { Headers:
                 { 'Access-Control-Allow-Origin': 'https://karuta-react.herokuapp.com/' }})
             .catch((err) => {
                 console.log(err)
