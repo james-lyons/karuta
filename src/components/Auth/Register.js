@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Modal } from 'semantic-ui-react';
-import Axios from 'axios';
+import axios from 'axios';
 import API_URL from '../../constants'
 
 class Register extends React.Component {
@@ -21,7 +21,7 @@ class Register extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         const newUser = this.state;
-        Axios.post(`${ API_URL }/auth/register`, newUser)
+        axios.post(`${ API_URL }/auth/register`, newUser, { withCredentials: true })
             .catch((err) => {
                 console.log(err.response.data)
                 this.setState({
