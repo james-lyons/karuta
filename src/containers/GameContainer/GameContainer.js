@@ -101,7 +101,7 @@ class GameContainer extends React.Component {
             this.max18cards(deck);
         };
         return deck;
-    }
+    };
 
     handleGameStart = () => {
         const deck_id = this.state.deck_id;

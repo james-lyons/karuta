@@ -21,11 +21,11 @@ class Register extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         const newUser = this.state;
-        axios.post(`${ API_URL }/auth/register`, newUser, { withCredentials: true })
+        axios.post(`${ API_URL }/auth/register`, newUser)
             .catch((err) => {
                 console.log(err)
                 this.setState({
-                    errors: [err.response]
+                    errors: [err.response.data]
                 });
             });
     };
