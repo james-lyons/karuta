@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/karuta/static/css/main.d37f57c5.chunk.css",
+    "main.js": "/karuta/static/js/main.8aa175d0.chunk.js",
+    "main.js.map": "/karuta/static/js/main.8aa175d0.chunk.js.map",
+    "runtime~main.js": "/karuta/static/js/runtime~main.1db7b0fe.js",
+    "runtime~main.js.map": "/karuta/static/js/runtime~main.1db7b0fe.js.map",
+    "static/js/2.fb756864.chunk.js": "/karuta/static/js/2.fb756864.chunk.js",
+    "static/js/2.fb756864.chunk.js.map": "/karuta/static/js/2.fb756864.chunk.js.map",
+    "index.html": "/karuta/index.html",
+    "precache-manifest.d97f4b0a59782264cbde8cfd8b768cae.js": "/karuta/precache-manifest.d97f4b0a59782264cbde8cfd8b768cae.js",
+    "service-worker.js": "/karuta/service-worker.js",
+    "static/css/main.d37f57c5.chunk.css.map": "/karuta/static/css/main.d37f57c5.chunk.css.map",
+    "static/media/karuta-2.jpg": "/karuta/static/media/karuta-2.10142b29.jpg",
+    "static/media/karuta-3.jpg": "/karuta/static/media/karuta-3.3f8141d1.jpg",
+    "static/media/karuta-5.jpg": "/karuta/static/media/karuta-5.3f13e953.jpg",
+    "static/media/Home.css": "/karuta/static/media/karuta-background-1.e37752a0.jpg"
+  }
+}
